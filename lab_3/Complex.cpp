@@ -65,7 +65,7 @@ namespace mo {
 	std::ostream& operator <<(std::ostream& os, const Complex& number) {
 		os << number.m_realPart;
 		if (number.m_imaginaryPart >= 0) {
-			std::cout << '+';
+			os << '+';
 		}
 		os << number.m_imaginaryPart << 'i';
 		return os;
